@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#fcfcfb" />
+  <meta name="description" content="Recebemos seu cadastro. Saiba como será o próximo passo do atendimento da LAR Lançamentos." />
+  <title>Cadastro recebido | LAR Lançamentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --red: #ff4441;
+      --red-dark: #dd312f;
+      --ink: #333333;
+      --muted: #686867;
+      --soft: #858581;
+      --paper: #fcfcfb;
+      --surface: #f4f4f2;
+      --line: #e6e6e3;
+      --white: #fff;
+      --display: 'Bricolage Grotesque', 'Arial Black', sans-serif;
+      --body: 'Inter', 'Arial', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; }
+    .shell { width: min(100% - 88px, 1136px); margin-inline: auto; }
+    .site-header { min-height: 92px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .brand { display: inline-flex; align-items: center; gap: 16px; text-decoration: none; color: var(--ink); }
+    .brand-primary { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: .8; letter-spacing: -2.4px; }
+    .brand-rule { display: block; width: 1px; height: 33px; background: #d3d3d0; }
+    .brand-secondary { font-family: var(--body); font-weight: 650; letter-spacing: .115em; font-size: 11px; line-height: 1.25; }
+    main { overflow: clip; }
+    .hero { min-height: 570px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 76px 20px 88px; position: relative; isolation: isolate; }
+    .hero::before { content: ''; position: absolute; width: 220px; height: 220px; top: 37px; left: calc(50% + 363px); opacity: .46; pointer-events: none; z-index: -1; background:
+      linear-gradient(90deg, transparent 17%, var(--line) 17% 17.45%, transparent 17.45% 73%, var(--line) 73% 73.45%, transparent 73.45%),
+      linear-gradient(0deg, transparent 24%, var(--line) 24% 24.45%, transparent 24.45% 62%, var(--line) 62% 62.45%, transparent 62.45%);
+      transform: rotate(-5deg); }
+    .seal { display: grid; place-items: center; width: 76px; height: 76px; margin-bottom: 36px; border-radius: 50%; background: #fff0ef; border: 1px solid #ffd0ce; color: var(--red-dark); }
+    .seal svg { width: 39px; height: 39px; }
+    h1, h2, p { margin: 0; }
+    h1, h2 { font-family: var(--display); font-weight: 650; }
+    .hero h1 { max-width: 830px; font-size: clamp(44px, 5.7vw, 76px); letter-spacing: -.059em; line-height: 1.055; }
+    .hero h1 span { display: block; }
+    .hero-summary { max-width: 555px; margin-top: 25px; color: #666664; font-size: clamp(16px, 1.55vw, 18px); line-height: 1.7; letter-spacing: -.018em; }
+    .hero-rule { margin-top: 47px; width: 45px; height: 3px; background: var(--red); border-radius: 3px; }
+    .body-container { border-top: 1px solid var(--line); }
+    .content-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.04fr); gap: clamp(44px, 8vw, 126px); padding: 91px 12px 96px; align-items: start; }
+    .content-row + .content-row { border-top: 1px solid var(--line); }
+    .content-title { max-width: 420px; font-size: clamp(36px, 3.9vw, 49px); line-height: 1.13; letter-spacing: -.045em; }
+    .content-copy { max-width: 506px; padding-top: 5px; }
+    .content-copy > p { color: #555554; font-size: 16px; line-height: 1.82; letter-spacing: -.013em; }
+    .content-copy strong { color: var(--ink); font-weight: 650; }
+    .reassurance { display: flex; gap: 16px; align-items: start; margin-top: 27px; padding: 22px 24px; background: var(--surface); border-left: 3px solid var(--red); }
+    .reassurance-icon { flex: 0 0 auto; display: grid; place-items: center; color: var(--red-dark); width: 23px; height: 23px; }
+    .reassurance p { font-size: 14px; line-height: 1.68; color: #525250; }
+    .reassurance p strong { font-weight: 700; }
+    .portfolio-copy p + p { margin-top: 21px; }
+    .cta-wrap { padding-block: 6px 88px; }
+    .cta-panel { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0, .8fr); column-gap: 60px; align-items: center; min-height: 322px; padding: clamp(40px, 5.5vw, 72px); position: relative; background: var(--ink); color: var(--white); isolation: isolate; overflow: hidden; }
+    .cta-panel::after { content: ''; position: absolute; width: 310px; height: 310px; right: -114px; top: -85px; border: 1px solid rgba(255,255,255,.17); outline: 1px solid rgba(255,255,255,.15); outline-offset: 36px; transform: rotate(29deg); z-index: -1; pointer-events: none; }
+    .cta-panel h2 { max-width: 550px; font-size: clamp(36px, 3.9vw, 52px); line-height: 1.12; letter-spacing: -.045em; }
+    .cta-panel .cta-description { margin-top: 20px; font-size: 15px; line-height: 1.8; color: #dddedd; max-width: 490px; }
+    .cta-action { display: flex; flex-direction: column; align-items: flex-start; gap: 17px; }
+    .instagram-button { display: inline-flex; align-items: center; justify-content: center; gap: 30px; min-height: 59px; padding: 17px 23px 17px 27px; border: 1px solid transparent; border-radius: 2px; background: var(--red); color: #fff; text-decoration: none; font-family: var(--body); font-size: 15px; letter-spacing: -.015em; font-weight: 700; white-space: nowrap; transition: background-color .15s ease, transform .15s ease; }
+    .instagram-button:hover { background: var(--red-dark); transform: translateY(-2px); }
+    .instagram-button svg { width: 19px; height: 19px; flex: 0 0 auto; }
+    .cta-footnote { max-width: 310px; font-size: 12px; line-height: 1.7; color: #c6c6c4; }
+    .site-footer { border-top: 1px solid var(--line); }
+    .site-footer-inner { min-height: 116px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .footer-brand { font-family: var(--display); font-size: 20px; font-weight: 700; letter-spacing: -.045em; }
+    .footer-brand span { font-family: var(--body); font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: .14em; margin-left: 4px; }
+    .footer-line { font-size: 13px; line-height: 1.7; color: #757573; text-align: right; }
+    @media (max-width: 800px) {
+      .shell { width: min(100% - 44px, 1136px); }
+      .hero { min-height: 465px; padding: 72px 10px 70px; }
+      .hero::before { display: none; }
+      .content-row { grid-template-columns: 1fr; gap: 27px; padding: 70px 6px 75px; }
+      .content-title, .content-copy { max-width: 660px; }
+      .content-copy { padding-top: 0; }
+      .cta-panel { grid-template-columns: 1fr; row-gap: 36px; padding: 48px 38px; }
+      .cta-wrap { padding-bottom: 66px; }
+    }
+    @media (max-width: 520px) {
+      .shell { width: calc(100% - 34px); }
+      .site-header { min-height: 76px; }
+      .brand { gap: 13px; }
+      .brand-primary { font-size: 29px; }
+      .brand-rule { height: 27px; }
+      .brand-secondary { font-size: 9px; letter-spacing: .09em; }
+      .hero { min-height: 405px; padding: 56px 6px 58px; }
+      .seal { width: 67px; height: 67px; margin-bottom: 29px; }
+      .seal svg { width: 34px; height: 34px; }
+      .hero h1 { font-size: clamp(39px, 10.5vw, 54px); line-height: 1.08; letter-spacing: -.058em; }
+      .hero-summary { font-size: 15px; line-height: 1.72; margin-top: 23px; }
+      .hero-rule { margin-top: 32px; }
+      .content-row { gap: 23px; padding: 58px 3px 62px; }
+      .content-title { font-size: clamp(33px, 9.3vw, 43px); line-height: 1.12; }
+      .content-copy > p { font-size: 14.5px; line-height: 1.82; }
+      .reassurance { gap: 12px; padding: 18px; margin-top: 23px; }
+      .reassurance p { font-size: 13px; }
+      .portfolio-copy p + p { margin-top: 15px; }
+      .cta-wrap { padding: 0 0 52px; }
+      .cta-panel { padding: 39px 25px 35px; gap: 30px; }
+      .cta-panel h2 { font-size: clamp(33px, 9.1vw, 42px); }
+      .cta-panel .cta-description { font-size: 14px; margin-top: 17px; }
+      .cta-action { width: 100%; gap: 14px; }
+      .instagram-button { width: 100%; min-height: 56px; justify-content: space-between; gap: 8px; padding: 15px 17px; font-size: 13.5px; }
+      .cta-footnote { font-size: 11.5px; }
+      .site-footer-inner { min-height: 114px; align-items: start; flex-direction: column; justify-content: center; gap: 10px; }
+      .footer-line { text-align: left; font-size: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <!-- Tipografia provisória da marca. Substituir pelo logo SVG/PNG oficial se disponível. -->
+      <div class="brand" aria-label="LAR Lançamentos">
+        <span class="brand-primary">LAR</span>
+        <span class="brand-rule" aria-hidden="true"></span>
+        <span class="brand-secondary">LANÇAMENTOS</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- 1. Confirmar -->
+    <section class="hero shell" aria-labelledby="confirmacao-titulo">
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="m12 24.5 8.2 8.2L36 17" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h1 id="confirmacao-titulo"><span>Tudo certo!</span>Seu cadastro foi recebido.</h1>
+      <p class="hero-summary">Recebemos seus dados e vamos dar continuidade ao seu atendimento.</p>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </section>
+
+    <div class="shell body-container">
+      <!-- 2. Orientar -->
+      <section class="content-row" aria-labelledby="atendimento-titulo">
+        <h2 class="content-title" id="atendimento-titulo">Agora, é com a gente.</h2>
+        <div class="content-copy">
+          <p>Um consultor da LAR Lançamentos entrará em contato para apresentar mais informações sobre o empreendimento que despertou seu interesse, esclarecer suas dúvidas e entender o que você procura.</p>
+          <div class="reassurance">
+            <span class="reassurance-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5 12.5 4.3 4.3L19 7.2" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <p><strong>Você não precisa fazer mais nada.</strong> Basta aguardar nosso contato pelos dados que informou no cadastro.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Ampliar valor -->
+      <section class="content-row" aria-labelledby="portfolio-titulo">
+        <h2 class="content-title" id="portfolio-titulo">Seu interesse é o nosso ponto de partida.</h2>
+        <div class="content-copy portfolio-copy">
+          <p>Além de conhecer os detalhes do empreendimento que você escolheu, você conta com a experiência de uma equipe que trabalha com diferentes perfis de lançamentos imobiliários.</p>
+          <p>Se fizer sentido para seus objetivos, nosso consultor também poderá apresentar outras possibilidades para ajudar você a encontrar a opção que mais combina com o que procura.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- 4. Engajar (uma única ação opcional) -->
+    <section class="cta-wrap shell" aria-labelledby="instagram-titulo">
+      <div class="cta-panel">
+        <div>
+          <h2 id="instagram-titulo">Enquanto isso, conheça mais possibilidades.</h2>
+          <p class="cta-description">Acompanhe a LAR Lançamentos no Instagram e descubra outros projetos, novidades e conteúdos sobre o mercado imobiliário.</p>
+        </div>
+        <div class="cta-action">
+          <!-- URL institucional provisória: conferir o perfil exclusivo de LAR Lançamentos antes de publicar. -->
+          <a class="instagram-button" id="instagram-link" href="https://www.instagram.com/lar_imoveis/" target="_blank" rel="noopener noreferrer">
+            <span>Conhecer nosso Instagram</span>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M7 17 17 7M8 7h9v9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <p class="cta-footnote">Nosso contato com você já está encaminhado. Não é necessário realizar nenhuma outra ação.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer-inner">
+      <p class="footer-brand">LAR <span>Lançamentos</span></p>
+      <p class="footer-line">Novas possibilidades para diferentes momentos da sua vida.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Evento de interação para captura no Google Tag Manager/GA4.
+    // Este evento NÃO deve ser usado como nova conversão de lead.
+    document.getElementById('instagram-link').addEventListener('click', function () {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'thank_you_instagram_click',
+        page_type: 'meta_lead_thank_you',
+        destination: 'instagram'
+      });
+    });
+  </script>
+</body>
+</html>
