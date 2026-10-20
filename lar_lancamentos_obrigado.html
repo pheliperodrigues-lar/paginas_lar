@@ -30,11 +30,10 @@
     a { color: inherit; }
     a:focus-visible { outline: 3px solid var(--red); outline-offset: 5px; }
     .shell { width: min(100% - 88px, 1136px); margin-inline: auto; }
-    .site-header { min-height: 92px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
-    .brand { display: inline-flex; align-items: center; gap: 16px; text-decoration: none; color: var(--ink); }
-    .brand-primary { font-family: var(--display); font-weight: 800; font-size: 34px; line-height: .8; letter-spacing: -2.4px; }
-    .brand-rule { display: block; width: 1px; height: 33px; background: #d3d3d0; }
-    .brand-secondary { font-family: var(--body); font-weight: 650; letter-spacing: .115em; font-size: 11px; line-height: 1.25; }
+    .site-header { min-height: 132px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; }
+    .brand-image { display: block; height: 102px; width: auto; max-width: 100%; }
+
     main { overflow: clip; }
     .hero { min-height: 570px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 76px 20px 88px; position: relative; isolation: isolate; }
     .hero::before { content: ''; position: absolute; width: 220px; height: 220px; top: 37px; left: calc(50% + 363px); opacity: .46; pointer-events: none; z-index: -1; background:
@@ -73,8 +72,8 @@
     .cta-footnote { max-width: 310px; font-size: 12px; line-height: 1.7; color: #c6c6c4; }
     .site-footer { border-top: 1px solid var(--line); }
     .site-footer-inner { min-height: 116px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
-    .footer-brand { font-family: var(--display); font-size: 20px; font-weight: 700; letter-spacing: -.045em; }
-    .footer-brand span { font-family: var(--body); font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: .14em; margin-left: 4px; }
+    .footer-logo { display: block; height: 80px; width: auto; max-width: 100%; }
+
     .footer-line { font-size: 13px; line-height: 1.7; color: #757573; text-align: right; }
     @media (max-width: 800px) {
       .shell { width: min(100% - 44px, 1136px); }
@@ -88,11 +87,11 @@
     }
     @media (max-width: 520px) {
       .shell { width: calc(100% - 34px); }
-      .site-header { min-height: 76px; }
-      .brand { gap: 13px; }
-      .brand-primary { font-size: 29px; }
-      .brand-rule { height: 27px; }
-      .brand-secondary { font-size: 9px; letter-spacing: .09em; }
+      .site-header { min-height: 108px; }
+      .brand-image { height: 82px; }
+      .footer-logo { height: 70px; }
+
+
       .hero { min-height: 405px; padding: 56px 6px 58px; }
       .seal { width: 67px; height: 67px; margin-bottom: 29px; }
       .seal svg { width: 34px; height: 34px; }
@@ -124,11 +123,9 @@
 <body>
   <header class="site-header">
     <div class="shell">
-      <!-- Tipografia provisória da marca. Substituir pelo logo SVG/PNG oficial se disponível. -->
-      <div class="brand" aria-label="LAR Lançamentos">
-        <span class="brand-primary">LAR</span>
-        <span class="brand-rule" aria-hidden="true"></span>
-        <span class="brand-secondary">LANÇAMENTOS</span>
+      <!-- Logo oficial convertida do arquivo vetorial EPS original. -->
+      <div class="brand">
+        <img class="brand-image" src="./logo-lar-lancamentos.svg" alt="LAR Lançamentos" width="1360" height="1281" decoding="async" />
       </div>
     </div>
   </header>
@@ -191,7 +188,7 @@
 
   <footer class="site-footer">
     <div class="shell site-footer-inner">
-      <p class="footer-brand">LAR <span>Lançamentos</span></p>
+      <img class="footer-logo" src="./logo-lar-lancamentos.svg" alt="LAR Lançamentos" width="1360" height="1281" loading="lazy" decoding="async" />
       <p class="footer-line">Novas possibilidades para diferentes momentos da sua vida.</p>
     </div>
   </footer>
