@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/lar_lancamentos_obrigado.html"
+    }
+  ]
+}
